@@ -1,0 +1,54 @@
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    
+    .group{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .load-icon{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .load-icon svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        height: 70%;
+        z-index: 2;
+    }
+    
+    svg #d1, svg #d2{
+        stroke-dashoffset: 100;
+        animation: show 2s linear;
+    }
+    
+    @keyframes show{
+        from{
+            stroke-dasharray: 100;
+        }
+        to{
+            stroke-dasharray: 424;
+        }
+    }
+    
+    .txt{
+        text-align: center;
+        font-size: 16pt;
+    }
+        
+
+}

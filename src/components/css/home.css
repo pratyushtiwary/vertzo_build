@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+}
+.home .first .hero-banner {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: -20px;
+  top: 10%;
+  background: url(/images/illustrations/1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 50%;
+}
+.home .first .circle1 {
+  position: absolute;
+  left: -30px;
+  bottom: -15%;
+  width: 200px;
+  height: 200px;
+  background: url(/images/circle.svg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.home .first .circle2 {
+  position: absolute;
+  left: 49%;
+  bottom: 10%;
+  width: 50px;
+  height: 50px;
+  background: url(/images/circle.svg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.home .first .circle3 {
+  position: absolute;
+  left: 89%;
+  bottom: -10px;
+  width: 75px;
+  height: 75px;
+  background: url(/images/circle.svg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.home .first .text {
+  position: relative;
+  top: 200px;
+  margin-left: 80px;
+}
+.home .first .text .heading {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.home .first .text .sub-heading {
+  max-width: 50vw;
+  word-wrap: break-word;
+}
+.home .second .upper-curve {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 200px;
+  width: 100vw;
+  background: url(/images/curve5.svg);
+  background-size: 100%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.home .second .center {
+  position: relative;
+  top: 0%;
+  transform: translate(-50%);
+  z-index: 2;
+  padding: 100px 0;
+}
+.home .second .title {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 32pt;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.home .second .mission {
+  font-size: 22pt;
+  margin: 20px 0;
+  text-align: center;
+}
+.home .second .subtitle {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90vw;
+  text-align: center;
+  font-size: 16pt;
+}
+.home .second .bottom-curve {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 250px;
+  background: url(/images/curve1.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100%;
+}
+.home .third {
+  max-height: auto;
+}
+.home .third .upper-curve {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 300px;
+  background: url(/images/curve2.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100%;
+}
+.home .third .cont {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  z-index: 2;
+  padding: 100px 0;
+}
+.home .third .title {
+  position: relative;
+  font-size: 32pt;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.home .third .teams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  grid-gap: 1em;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 95%;
+}
+.home .third .teams .team {
+  padding: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 0 1px darkorange;
+  border-radius: 4px;
+  z-index: 2;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 10px 0;
+  max-width: 450px;
+  transition: 0.25s linear;
+}
+.home .third .teams .team img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  border: 1px solid #000;
+  transition: 0.25s linear;
+}
+.home .third .teams .team .name {
+  font-size: 28pt;
+  text-align: center;
+}
+.home .third .teams .team .designation {
+  margin: 10px 0;
+  font-size: 16pt;
+  text-align: center;
+}
+.home .third .teams .team:hover {
+  transform: translate(-50%) scale(1.05);
+}
+.home .third .teams .team:hover img {
+  border-radius: 10px;
+}
+.home .third .bottom-curve {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 300px;
+  background: url(/images/curve3.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100%;
+  z-index: 1;
+}
+.home .fourth {
+  min-height: 80vh;
+}
+.home .fourth .upper-curve {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 300px;
+  background: url(/images/curve6.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  z-index: 1;
+}
+.home .fourth .bottom-curve {
+  position: relative;
+  z-index: -1;
+  height: 200px;
+  width: 100vw;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  background: url(/images/curve7.svg);
+  background-size: 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+.home .fourth .title {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  top: 100px;
+  text-align: center;
+  font-size: 32pt;
+  text-decoration: underline;
+}
+.home .fourth .events {
+  top: 150px;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.home .fourth .events .event {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  box-shadow: 0 0 5px 0 #eee;
+  border-radius: 10px;
+  max-width: 275px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.home .fourth .events .event img {
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.home .fourth .events .event .name {
+  position: relative;
+  font-size: 24pt;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+.home .fourth .events .event .info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home .fourth .events .event .info .place {
+  position: relative;
+  top: 4.5px;
+}
+.home .fourth .events .event .info .date {
+  margin-left: 10px;
+}
+.home .fourth .events .event .info span {
+  position: relative;
+  top: 5px;
+  font-size: 16pt;
+}
+.home .fourth .loadEvent {
+  position: relative;
+  top: 155px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f29238;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: "Exo 2", cursive !important;
+}
+.home .fifth {
+  height: 105vh;
+}
+.home .fifth .upper-curve {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 200px;
+  width: 100vw;
+  background: url(/images/curve8.svg);
+  background-size: 100%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.home .fifth a {
+  color: darkorange;
+  text-decoration: none;
+}
+.home .fifth .center {
+  width: 90%;
+}
+.home .fifth .title {
+  position: relative;
+  font-size: 32pt;
+  text-decoration: underline;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.home .fifth .t {
+  font-size: 16pt;
+}
+.home .fifth .t .icon {
+  position: relative;
+  top: 3px;
+}
+.home .fifth .addr {
+  margin: 10px 0;
+}
+.home .fifth .address, .home .fifth .telephone, .home .fifth .email {
+  margin: 15px 0;
+}
+.home .fifth .subtitle {
+  text-align: center;
+  width: 95%;
+  margin-bottom: 20px;
+}
+.home .fifth .subtitle span {
+  font-size: 20pt;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .third {
+    padding: 50px 0;
+  }
+  .third .cont {
+    position: relative !important;
+    top: auto !important;
+    transform: translate(-50%, 0%) !important;
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 280px) {
+  .text {
+    top: 150px !important;
+    margin-left: 20px !important;
+  }
+  .text .sub-heading {
+    max-width: 80vw !important;
+  }
+
+  .hero-banner {
+    right: -65px !important;
+  }
+}
+@media screen and (max-width: 1155px) {
+  .second .upper-curve {
+    display: block !important;
+  }
+
+  .first .circle1, .first .circle2, .first .circle3 {
+    display: none !important;
+  }
+  .first .text {
+    position: absolute !important;
+    top: 50% !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+  }
+  .first .text .sub-heading {
+    position: relative;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+  .first .hero-banner {
+    position: absolute !important;
+    width: 100vw !important;
+    height: 200px !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 0% !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    background-image: url(/images/curve4.svg) !important;
+    background-position: 50% 100% !important;
+    background-size: cover !important;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

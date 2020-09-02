@@ -1,0 +1,16 @@
+footer {
+  display: block;
+  background: #000;
+  position: relative;
+  width: 100vw;
+  font-size: 16pt;
+  padding: 10px 0;
+}
+footer span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/*# sourceMappingURL=footer.css.map */

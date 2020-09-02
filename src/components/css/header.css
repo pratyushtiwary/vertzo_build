@@ -1,0 +1,154 @@
+header {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 20;
+}
+header .branding {
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 10px;
+  display: inline-flex;
+}
+header .branding .logo {
+  width: 30px;
+  height: 25px;
+  background: url("/images/logo.svg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+header .branding .text {
+  font-weight: bold;
+  color: #f29238;
+  font-size: 24pt;
+  margin-left: 10px;
+}
+header .hamburger {
+  display: none;
+  font-size: 32pt;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+}
+header .items {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: inline-flex;
+  margin-right: 15px;
+}
+header .items .cont {
+  display: inline-flex;
+}
+header .items .cont .center-items {
+  display: inline-flex;
+}
+header .items .overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+header .items .close {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  font-size: 32pt;
+  cursor: pointer;
+  z-index: 2;
+}
+header .items a {
+  text-decoration: none;
+  color: #000;
+}
+header .items a li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+header .items a:hover {
+  background: #f29238;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  header .items {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    height: 100%;
+    left: -100%;
+    width: 100vw;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: border-radius 0.15s linear;
+    transition: left 0.15s linear;
+  }
+  header .items .cont {
+    width: 200px;
+    border-radius: 0 100% 100% 0;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: all 0.25s linear;
+  }
+  header .items .cont .center-items {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .hamburger {
+    display: block;
+  }
+  header .show {
+    left: 0%;
+    right: auto;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.15s linear;
+  }
+  header .show .overlay {
+    display: block;
+  }
+  header .show .close {
+    display: block;
+  }
+  header .show .cont {
+    display: block;
+    left: 0%;
+    z-index: 2;
+    background: #fff;
+    border-radius: 0% 0% 0% 0%;
+  }
+  header .show .cont .item {
+    margin: 10px 0;
+    z-index: 2;
+    text-align: center;
+  }
+  header .show .cont .item:hover {
+    background: #f29238;
+    color: #fff;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

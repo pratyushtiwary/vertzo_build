@@ -1,0 +1,191 @@
+header{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background: rgba(255,255,255,0.95);
+    z-index: 20;
+
+    .branding{
+        margin-left: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%,-50%);
+        padding: 10px;
+        display: inline-flex;
+
+        .logo{
+            width: 30px;
+            height: 25px;
+            background: url("/images/logo.svg");
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            padding: 5px;
+
+            
+        }
+
+        .text{
+            font-weight: bold;
+            color: #f29238;
+            font-size: 24pt;
+            margin-left: 10px;
+        }
+
+
+    }
+
+    .hamburger{
+        display: none;
+        font-size: 32pt;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translate(0%,-50%);
+        cursor: pointer;
+    }
+
+    .items{
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translate(0%,-50%);
+        display: inline-flex;
+        margin-right: 15px;
+
+        .cont{
+            display: inline-flex;
+
+            .center-items{
+                display: inline-flex;
+            }
+            
+        }
+
+
+        .overlay{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 1;
+        }
+
+        .close{
+            display: none;
+            position: absolute;
+            top: 5%;
+            right: 20px;
+            font-size: 32pt;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+            li{
+                list-style: none;
+                padding: 10px;
+                cursor: pointer;
+                margin: 0 10px;
+                transition: 0.5s;
+            }
+        }
+        a:hover{
+            background: #f29238;
+            color: #fff;
+        }
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+    header{
+        .items{
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
+            height: 100%;
+            left: -100%;
+            width: 100vw;
+            top: 50%;
+            transform: translate(0%,-50%);
+            transition: border-radius 0.15s linear;
+            transition: left 0.15s linear;
+
+            .cont{
+                width: 200px;
+                border-radius: 0 100% 100% 0;
+                width: 200px;
+                height: 100vh;
+                position: absolute;
+                top: 50%;
+                transform: translate(0%,-50%);
+                transition: all 0.25s linear;
+
+                .center-items{
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%)
+                }
+
+            }
+
+        }
+    
+        .hamburger{
+            display: block;
+        }
+
+        
+        .show{
+            left: 0%;
+            right: auto;
+            opacity: 1;
+            pointer-events: auto;
+            transition: 0.15s linear;
+
+            .overlay{
+                display: block;
+            }
+
+
+            .close{
+                display: block;
+            }
+
+            .cont{
+                display: block;
+                left: 0%;
+                z-index: 2;
+                background: #fff;
+                border-radius: 0% 0% 0% 0%;
+
+                .item{
+                    margin: 10px 0;
+                    z-index: 2;
+                    text-align: center;
+                }
+
+                .item:hover{
+                    background: #f29238;
+                    color: #fff;
+                }
+
+            }
+
+        }
+    
+    }
+}

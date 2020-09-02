@@ -1,0 +1,48 @@
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background: #fff;
+}
+.loader .group {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader .load-icon {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.loader .load-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  z-index: 2;
+}
+.loader svg #d1, .loader svg #d2 {
+  stroke-dashoffset: 100;
+  animation: show 2s linear;
+}
+@keyframes show {
+  from {
+    stroke-dasharray: 100;
+  }
+  to {
+    stroke-dasharray: 424;
+  }
+}
+.loader .txt {
+  text-align: center;
+  font-size: 16pt;
+}
+
+/*# sourceMappingURL=loader.css.map */

@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+
+    section{
+        position: relative;
+        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+    }
+
+
+    .first{
+
+        .hero-banner{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            right: -20px;
+            top: 10%;
+            background: url(/images/illustrations/1.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 100% 50% ;
+        }
+
+        .circle1{
+            position: absolute;
+            left: -30px;
+            bottom: -15%;
+            width: 200px;
+            height: 200px;
+            background: url(/images/circle.svg);
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .circle2{
+            position: absolute;
+            left: 49%;
+            bottom: 10%;
+            width: 50px;
+            height: 50px;
+            background: url(/images/circle.svg);
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+
+        .circle3{
+            position: absolute;
+            left: 89%;
+            bottom: -10px;
+            width: 75px;
+            height: 75px;
+            background: url(/images/circle.svg);
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+
+        .text{
+            position: relative;
+            top: 200px;
+            margin-left: 80px;
+
+            .heading{
+                font-size: 32pt;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .sub-heading{
+                max-width: 50vw;
+                word-wrap: break-word;
+            }
+
+        }
+
+    }
+
+    .second{
+        
+        .upper-curve{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            height: 200px;
+            width: 100vw;
+            background: url(/images/curve5.svg);
+            background-size: 100%;
+            background-position: 50% 0%;
+            background-repeat: no-repeat;
+        }
+        .center{
+            position: relative;
+            top: 0%;
+            transform: translate(-50%);
+            z-index: 2;
+            padding: 100px 0;
+        }
+        .title{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 32pt;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .mission{
+            font-size: 22pt;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .subtitle{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90vw;
+            text-align: center;
+            font-size: 16pt;
+        }
+
+        .bottom-curve{
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100vw;
+            height: 250px;
+            background: url(/images/curve1.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+            background-size: 100%;
+        }
+
+    }
+
+    .third{
+        max-height: auto;
+        .upper-curve{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100vw;
+            height: 300px;
+            background: url(/images/curve2.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: 100%;
+        }
+
+        .cont{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100vw;
+            z-index: 2;
+            padding: 100px 0;
+        }
+
+        .title{
+            position: relative;
+            font-size: 32pt;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+
+
+        .teams{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            justify-items: center;
+            grid-gap: 1em;
+            z-index: 2;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 95%;
+
+            .team{
+                padding: 10px;
+                background: #fff;
+                box-shadow: 5px 5px 0 1px darkorange;
+                border-radius: 4px;
+                z-index: 2;
+                width: 90%;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                margin: 10px 0;
+                max-width: 450px;
+                transition: 0.25s linear;
+
+                img {
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                    border-radius: 50%;
+                    border: 1px solid #000;
+                    transition: 0.25s linear;
+                }
+
+                .name{
+                    font-size: 28pt;
+                    text-align: center;
+                }
+
+                .designation{
+                    margin: 10px 0;
+                    font-size: 16pt;
+                    text-align: center;
+                }
+
+            }
+
+            .team:hover{
+                transform: translate(-50%) scale(1.05);
+
+                img{
+                    border-radius: 10px;
+                }
+
+            }
+
+        }
+
+        .bottom-curve{
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100vw;
+            height: 300px;
+            background: url(/images/curve3.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+            background-size: 100%;
+            z-index: 1;
+        }
+        
+    }
+
+    .fourth{
+        min-height: 80vh;
+        .upper-curve{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100vw;
+            height: 300px;
+            background: url(/images/curve6.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            z-index: 1;
+        }
+
+        .bottom-curve{
+            position: relative;
+            z-index: -1;
+            height: 200px;
+            width: 100vw;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            background: url(/images/curve7.svg);
+            background-size: 100%;
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .title{
+            z-index: 2;
+            position: relative;
+            width: 100%;
+            top: 100px;
+            text-align: center;
+            font-size: 32pt;
+            text-decoration: underline;
+        }
+
+        .events{
+            top: 150px;
+            z-index: 2;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            min-width: 90%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+
+            .event{
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                background: #fff;
+                box-shadow: 0 0 5px 0 #eee;
+                border-radius: 10px;
+                max-width: 275px;
+                padding: 10px;
+                margin: 10px 0;
+
+                img{
+                    border-radius: 10px;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                    margin-top: 10px;
+                    border-radius: 10px;
+                }
+
+                .name{
+                    position: relative;
+                    font-size: 24pt;
+                    width: 100%;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+
+                .info{
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    .place{
+                        position: relative;
+                        top: 4.5px;
+                    }
+
+                    .date{
+                        margin-left: 10px;
+                    }
+                    span{
+                        position: relative;
+                        top: 5px;
+                        font-size: 16pt;
+                    }
+
+                }
+
+            }
+
+        }
+        .loadEvent{
+            position: relative;
+            top: 155px;
+            left: 50%;
+            transform: translate(-50%);
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f29238;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-family: 'Exo 2', cursive !important;
+        }
+
+    }
+
+    .fifth{
+        height: 105vh;
+
+        .upper-curve{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            height: 200px;
+            width: 100vw;
+            background: url(/images/curve8.svg);
+            background-size: 100%;
+            background-position: 50% 0%;
+            background-repeat: no-repeat;
+        }
+
+        a{
+            color: darkorange;
+            text-decoration: none;
+        }
+
+        .center{
+            width: 90%;
+        }
+        .title{
+            position: relative;
+            font-size: 32pt;
+            text-decoration: underline;
+            width: 95%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .t{
+            font-size: 16pt;
+
+            .icon{
+                position: relative;
+                top: 3px;
+            }
+
+        }
+
+        .addr{
+            margin: 10px 0;
+        }
+
+        .address,.telephone,.email{
+            margin: 15px 0;
+        }
+
+    
+        .subtitle{
+            text-align: center;
+            width: 95%;
+            span{
+                font-size: 20pt;
+                text-align: center;
+                display: block;
+                margin: 10px 0;
+            }
+            margin-bottom: 20px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .third{
+        .cont{
+            position: relative !important;
+            top: auto !important;
+            transform: translate(-50%,0%) !important;
+            width: 90% !important;
+        }
+        padding: 50px 0;
+    }
+}
+
+
+@media screen and (max-width: 280px){
+    .text{
+        top: 150px !important;
+        margin-left: 20px !important;
+
+        .sub-heading{
+            max-width: 80vw !important;
+        }
+
+    }
+
+    .hero-banner{
+        right: -65px !important;
+    }
+
+}
+
+@media screen and (max-width: 1155px){
+
+    .second{
+        .upper-curve{
+            display: block !important;
+        }
+    }
+
+    .first{
+
+        .circle1,.circle2,.circle3{
+            display: none !important;
+        }
+
+        .text{
+            position: absolute !important;
+            top: 50% !important;
+            width: 100% !important;
+            text-align: center !important; 
+            margin-left: 0 !important;
+            left: 50% !important;
+            transform: translate(-50%,-50%) !important;
+            z-index: 2;
+
+            .sub-heading{
+                position: relative;
+                left: 50% !important;
+                transform: translate(-50%) !important;
+                max-width: 90% !important;
+                text-align: center !important;
+            }
+
+        }
+        .hero-banner{
+            position: absolute !important;
+            width: 100vw !important;
+            height: 200px !important;
+            top: auto !important;
+            right: auto !important;
+            bottom: 0% !important;
+            left: 50% !important;
+            transform: translate(-50%) !important;
+            background-image: url(/images/curve4.svg) !important;
+            background-position: 50% 100% !important;
+            background-size: cover !important;
+        }    
+    }
+}
